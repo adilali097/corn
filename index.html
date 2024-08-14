@@ -5,22 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Request Free Access to Corn AI</title>
     
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- WhatsApp Theme Colors -->
     <style>
         body {
-            background-color: #e5ddd5;
+             background: linear-gradient(to bottom right, #d5aef9, #c3b9ff);
+            font-family: Arial, sans-serif;
+            
         }
         
         .navbar {
@@ -30,7 +26,7 @@
         .hero {
             background-color: #128c7e;
             color: #fff;
-            padding: 80px 0;
+            padding: 60px 0;
             text-align: center;
         }
         
@@ -46,17 +42,12 @@
         
         .features {
             background-color: #fff;
-            padding: 80px 0;
+            padding: 60px 0;
         }
         
         .request-access {
             background-color: #f4f4f4;
-            padding: 80px 0;
-        }
-        
-        .contact {
-            background-color: #fff;
-            padding: 80px 0;
+            padding: 60px 0;
         }
         
         footer {
@@ -65,8 +56,48 @@
             padding: 20px 0;
             text-align: center;
         }
-      .ai-voice-trained-icon .fa-microphone {
-            color: #007bff;
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+        
+        @keyframes rainflow {
+            0% { transform: translateY(-100%); color: #333; }
+            50% { transform: translateY(0); color: red; }
+            100% { transform: translateY(100%); color: #333; }
+        }
+
+        .rainflow-text {
+            display: inline-block;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 2em;
+            animation: rainflow 5s infinite;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .pricing-card {
+            border: 2px solid #28a745;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .pricing-card:hover {
+            transform: scale(1.05);
+        }
+
+        .pricing-card h3 {
+            color: #28a745;
+        }
+
+        .pricing-card .price {
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +118,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#features">Features</a>
                     </li>
-                     <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#corn-ai-pricing">Price</a>
                     </li>
                     <li class="nav-item">
@@ -96,45 +127,24 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
-                   
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero text-center">
+    <section class="hero">
         <div class="container">
-            
             <h1 class="mb-4">Request Free Access to Corn AI</h1>
             <p class="lead">Transform Your Customer Relationships with Advanced AI</p>
-            <p>You have Get 4 Months Complety Free to Test And work on your Bussiness</p>
-            
-              <style>
-        @keyframes rainflow {
-            0% { transform: translateY(-100%); color: #333; }
-            50% { transform: translateY(0); color: red; }
-            100% { transform: translateY(100%); color: #333; }
-        }
-    </style><h1 style="
-        display: inline-block;
-        font-family: 'Helvetica Neue', Arial, sans-serif;
-        font-size: 2em;
-        animation: rainflow 5s infinite;
-        overflow: hidden;
-        white-space: nowrap;
-        margin: 50px auto;
-        text-align: center;
-    ">
-        Patience is the way of enterprises
-    </h1>
-            <br>
-      <a href="Discover-Corn-AI-The-Future-of-Customer-Relationship-Management.pdf" class="btn btn-lg btn-success cta-button">Documation</a>      
+            <p>You get 4 months completely free to test and work on your business.</p>
+            <h1 class="rainflow-text">Patience is the way of enterprises</h1>
+            <a href="Discover-Corn-AI-The-Future-of-Customer-Relationship-Management.pdf" class="btn btn-lg btn-success cta-button">Documentation</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about text-center">
+    <section id="about" class="text-center">
         <div class="container">
             <h2>About Corn AI</h2>
             <p class="lead">Corn AI is a revolutionary WhatsApp CRM tool that leverages advanced AI technologies to enhance customer interactions and streamline CRM processes.</p>
@@ -142,359 +152,170 @@
         </div>
     </section>
 
- <!-- Features Section -->
+    <!-- Features Section -->
     <section id="features" class="features text-center">
         <div class="container">
             <h2>Key Features</h2>
             <div class="row mt-5">
-                <div class="col-lg-4 mb-4">
+                <div class="col-md-4 mb-4">
                     <i class="fas fa-robot fa-4x mb-4"></i>
                     <h4>AI-Powered Interaction</h4>
                     <p>Corn AI leverages OpenAI's language models to provide natural and intelligent responses to customer inquiries, enhancing engagement and efficiency.</p>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-md-4 mb-4">
                     <i class="fas fa-user fa-4x mb-4"></i>
                     <h4>Personalization with Gemini AI</h4>
                     <p>Integrating Gemini AI enables Corn AI to analyze customer sentiment and preferences, delivering personalized interactions tailored to individual needs.</p>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-md-4 mb-4">
                     <i class="fab fa-whatsapp fa-4x mb-4"></i>
                     <h4>WhatsApp Web API Integration</h4>
                     <p>Utilizing the WhatsApp Web API ensures secure and reliable messaging capabilities, essential for effective customer communication.</p>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-md-4 mb-4">
                     <i class="fas fa-check-circle fa-4x mb-4"></i>
                     <h4>Enhanced Customer Engagement</h4>
                     <p>Corn AI facilitates prompt and personalized responses, improving customer satisfaction and loyalty.</p>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-md-4 mb-4">
                     <i class="fas fa-cogs fa-4x mb-4"></i>
                     <h4>Efficient CRM</h4>
                     <p>Automated workflows and advanced analytics optimize resource management and operational efficiency.</p>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-md-4 mb-4">
                     <i class="fas fa-expand fa-4x mb-4"></i>
                     <h4>Scalability</h4>
                     <p>Designed for scalability, Corn AI accommodates business growth and adapts to evolving CRM requirements seamlessly.</p>
                 </div>
-            </div>
-          <div class="col-lg-4 mb-4">
-                    <i class="fas fa-microphone"></i>
-                    <h4>Voice Integretion</h4>
-                    <p>Corn AI is a state-of-the-art Voice Assistant designed to facilitate business growth by seamlessly adapting to evolving CRM requirements, offering a versatile and scalable solution tailored to meet dynamic business needs and ensuring it evolves alongside your expanding organization.</p>
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-microphone fa-4x mb-4"></i>
+                    <h4>Voice Integration</h4>
+                    <p>Corn AI is a state-of-the-art voice assistant designed to facilitate business growth by seamlessly adapting to evolving CRM requirements.</p>
                 </div>
+            </div>
         </div>
     </section>
-<section id="corn-ai-pricing" class="py-5">
-  <div class="container">
-    <h2 class="text-center text-success mb-5"> Corn-Ai WhatsApp CRM Tool Pricing</h2>
-    
-    <div class="row">
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="card border-success h-100">
-          <div class="card-body">
-            <h3 class="card-title text-success">Basic Plan</h3>
-            <p class="card-text price text-muted">₹999/month or ₹10,999/year (10% discount)</p>
-            <ul class="list-unstyled">
-              <li>Core CRM functionalities</li>
-              <li>500 WhatsApp messages per month</li>
-              <li>Single-user access</li>
-              <li>Basic customer segmentation</li>
-              <li>Standard customer support (email and chat)</li>
-              <li>Basic analytics and reporting</li>
-            </ul>
-          </div>
+
+    <!-- Pricing Section -->
+    <section id="corn-ai-pricing" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-success mb-5">Corn-Ai WhatsApp CRM Tool Pricing</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card pricing-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Basic Plan</h3>
+                            <p class="price">₹999/month or ₹10,999/year (10% discount)</p>
+                            <ul class="list-unstyled">
+                                <li>Core CRM functionalities</li>
+                                <li>500 WhatsApp messages per month</li>
+                                <li>Single-user access</li>
+                                <li>Basic customer segmentation</li>
+                                <li>Standard customer support (email and chat)</li>
+                                <li>Basic analytics and reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card pricing-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Standard Plan</h3>
+                            <p class="price">₹1,999/month or ₹21,999/year (10% discount)</p>
+                            <ul class="list-unstyled">
+                                <li>All Basic Plan features</li>
+                                <li>1000 WhatsApp messages per month</li>
+                                <li>Multi-user access (up to 5 users)</li>
+                                <li>Advanced customer segmentation</li>
+                                <li>Priority customer support</li>
+                                <li>Enhanced analytics and reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card pricing-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Premium Plan</h3>
+                            <p class="price">₹2,999/month or ₹32,999/year (10% discount)</p>
+                            <ul class="list-unstyled">
+                                <li>All Standard Plan features</li>
+                                <li>Unlimited WhatsApp messages</li>
+                                <li>Multi-user access (up to 10 users)</li>
+                                <li>AI-powered interaction (OpenAI)</li>
+                                <li>Premium customer support (24/7)</li>
+                                <li>Comprehensive analytics and reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card pricing-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Enterprise Plan</h3>
+                            <p class="price">₹4,999/month or ₹54,999/year (10% discount)</p>
+                            <ul class="list-unstyled">
+                                <li>All Premium Plan features</li>
+                                <li>Dedicated account manager</li>
+                                <li>Custom AI integration</li>
+                                <li>Scalable messaging</li>
+                                <li>Personalized customer training</li>
+                                <li>White-label solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="card border-success h-100">
-          <div class="card-body">
-            <h3 class="card-title text-success">Standard Plan</h3>
-            <p class="card-text price text-muted">₹2,499/month or ₹27,499/year (10% discount)</p>
-            <ul class="list-unstyled">
-              <li>All Basic Plan features</li>
-              <li>2,500 WhatsApp messages per month</li>
-              <li>Multi-user access (up to 5 users)</li>
-              <li>Advanced customer segmentation</li>
-              <li>Integration with third-party apps</li>
-              <li>Priority customer support (email, chat, and phone)</li>
-              <li>Advanced analytics and reporting</li>
-              <li>Customizable templates for automated messaging</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="card border-success h-100">
-          <div class="card-body">
-            <h3 class="card-title text-success">Premium Plan</h3>
-            <p class="card-text price text-muted">₹4,999/month or ₹54,999/year (10% discount)</p>
-            <ul class="list-unstyled">
-              <li>All Standard Plan features</li>
-              <li>Unlimited WhatsApp messages</li>
-              <li>Multi-user access (up to 10 users)</li>
-              <li>Dedicated account manager</li>
-              <li>Custom CRM customization (branding, UI modifications)</li>
-              <li>Integration with advanced third-party tools</li>
-              <li>Premium customer support (24/7 support)</li>
-              <li>AI-driven insights and recommendations</li>
-              <li>Exclusive access to beta features and updates</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="card border-success h-100">
-          <div class="card-body">
-            <h3 class="card-title text-success">Enterprise Plan</h3>
-            <p class="card-text price text-muted">Custom Pricing</p>
-            <ul class="list-unstyled">
-              <li>All Premium Plan features</li>
-              <li>Unlimited users</li>
-              <li>Fully customized CRM solution</li>
-              <li>Dedicated setup and support team</li>
-              <li>On-site training and consultation</li>
-              <li>Advanced security features</li>
-              <li>Regular performance reviews and optimization</li>
-              <li>Collaboration tools for large teams</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="add-ons mt-5">
-      <h3 class="text-success">Add-Ons</h3>
-      <ul class="list-unstyled">
-        <li>Additional Users: ₹500/user/month</li>
-        <li>Extra Messages: ₹1 per 10 messages beyond the plan limit</li>
-        <li>Custom Integrations: Starting at ₹10,000 (one-time fee)</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
-  }
-
-  #corn-ai-pricing {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  #corn-ai-pricing h2 {
-    color: #28a745;
-  }
-
-  .card {
-    border: 2px solid #28a745;
-    transition: transform 0.2s;
-  }
-
-  .card:hover {
-    transform: scale(1.05);
-  }
-
-  .card-title {
-    font-weight: bold;
-  }
-
-  .price {
-    font-size: 1.2rem;
-    color: #6c757d;
-    margin-bottom: 15px;
-  }
-
-  .add-ons h3 {
-    color: #28a745;
-  }
-
-  .add-ons ul li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-    color: #28a745;
-  }
-
-  .add-ons ul li::before {
-    content: '•';
-    color: #28a745;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-  }
-</style>
+    </section>
 
     <!-- Request Access Section -->
-    <section id="request" class="request-access text-center">
+    <section id="request" class="request-access">
         <div class="container">
-            <h2>Request Free Access</h2>
-            <form id="registrationForm" action="mailto:adnanmuhammad4393@gmail.com" method="post" enctype="text/plain" class="mt-4">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+            <h2 class="text-center mb-5">Request Free Access</h2>
+            <form action="submit-request.php" method="post">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name" name="name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Company Name" name="company_name">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Job Title" name="job_title">
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                    <textarea class="form-control" rows="4" placeholder="Tell Us About Your Needs" name="message"></textarea>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Company Name" name="company">
+                <div class="text-center">
+                    <button type="submit" class="btn btn-lg btn-success cta-button">Request Access</button>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Job Title" name="job_title">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" rows="4" placeholder="Message (optional)" name="message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-lg btn-success">Submit Request</button>
             </form>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact text-center">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p class="lead">For more information, contact Comic Fix:</p>
-            <ul class="list-unstyled">
-                <li>Email: <a href="infocornai@proton.me">infocornai@proton.me</a></li>
-                <li>Phone: +91 9656778508</li>
-                
-            </ul>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="text-center">
+    <footer>
         <div class="container">
-            <p>&copy; 2024 Comic Fix. All rights reserved.</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="https://x.com/comicfixin"><i class="fab fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="https://comicfix.vercel.app/"><i class="Web-site"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.linkedin.com/company/comicfix-com"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
+            <p>&copy; 2024 Corn AI. All Rights Reserved. Developed by Ad Web Comic Agency</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS and Font Awesome Icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- <script>
-        // Disable right-click context menu
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
-
-        // Disable keyboard shortcuts for viewing source (Ctrl+U, Ctrl+Shift+I, F12, etc.)
-        document.addEventListener('keydown', function(e) {
-            if (
-                e.ctrlKey && (e.key === 'u' || e.key === 'U') || // Ctrl+U
-                e.ctrlKey && e.shiftKey && (e.key === 'i' || e.key === 'I') || // Ctrl+Shift+I
-                e.key === 'F12' // F12
-            ) {
-                e.preventDefault();
-            }
-        });
-    </script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
-    const form = document.getElementById('autofill-form');
-    const xInput = document.getElementById('x-coord');
-    const yInput = document.getElementById('y-coord');
-
-    // Function to get the mouse position on the canvas
-    function getMousePos(canvas, evt) {
-        const rect = canvas.getBoundingClientRect();
-        return {
-            x: evt.clientX - rect.left,
-            y: evt.clientY - rect.top
-        };
-    }
-
-    // Event listener for mouse clicks on the canvas
-    canvas.addEventListener('click', function(evt) {
-        const mousePos = getMousePos(canvas, evt);
-        xInput.value = mousePos.x;
-        yInput.value = mousePos.y;
-    });
-
-    // Optional: Draw on the canvas where the click happened
-    canvas.addEventListener('click', function(evt) {
-        const mousePos = getMousePos(canvas, evt);
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.beginPath();
-        ctx.arc(mousePos.x, mousePos.y, 5, 0, 2 * Math.PI, true);
-        ctx.fill();
-    });
-
-    // Form submit event listener (optional for additional actions)
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert(`Coordinates submitted: X=${xInput.value}, Y=${yInput.value}`);
-    });
-});
-
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const generateBtn = document.getElementById('generate-btn');
-    const userContainer = document.getElementById('user-container');
-
-    // Function to generate a fake user located in Kerala
-    function generateFakeUser() {
-        const user = {
-            name: faker.name.findName(),
-            address: faker.address.streetAddress(),
-            city: faker.address.city(),
-            state: 'Kerala',
-            country: 'India',
-            zipCode: faker.address.zipCode('6#####'), // Kerala postal code pattern
-            latitude: faker.address.latitude(8.1833, 12.75), // Latitude range for Kerala
-            longitude: faker.address.longitude(74.8333, 77.4167) // Longitude range for Kerala
-        };
-        return user;
-    }
-
-    // Function to render fake users on the page
-    function renderFakeUsers(users) {
-        userContainer.innerHTML = '';
-        users.forEach(user => {
-            const userDiv = document.createElement('div');
-            userDiv.classList.add('user');
-            userDiv.innerHTML = `
-                <p>Name: ${user.name}</p>
-                <p>Address: ${user.address}</p>
-                <p>City: ${user.city}</p>
-                <p>State: ${user.state}</p>
-                <p>Country: ${user.country}</p>
-                <p>Zip Code: ${user.zipCode}</p>
-                <p>Latitude: ${user.latitude}</p>
-                <p>Longitude: ${user.longitude}</p>
-            `;
-            userContainer.appendChild(userDiv);
-        });
-    }
-
-    // Event listener for the button
-    generateBtn.addEventListener('click', () => {
-        const fakeUsers = [];
-        for (let i = 0; i < 5; i++) { // Change the number to generate more or fewer users
-            fakeUsers.push(generateFakeUser());
-        }
-        renderFakeUsers(fakeUsers);
-    });
-});
-
-</script>
-<script src="https://cdn.jsdelivr.net/npm/@faker-js/faker@7.4.0/dist/faker.umd.min.js"></script>
 </body>
 </html>
