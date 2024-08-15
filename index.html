@@ -14,30 +14,30 @@
     <!-- Custom CSS -->
     <style>
         body {
-             background: linear-gradient(to bottom right, #d5aef9, #c3b9ff);
+            background-color: #f9f5f9; /* Light purple background */
+            color: #000; /* Set text color to black */
             font-family: Arial, sans-serif;
-            
         }
         
         .navbar {
-            background-color: #075e54;
+            background-color: #5e2a80; /* Dark purple */
         }
         
         .hero {
-            background-color: #128c7e;
+            background-color: #6a1b9a; /* Purple */
             color: #fff;
             padding: 60px 0;
             text-align: center;
         }
         
         .cta-button {
-            background-color: #25d366;
-            border-color: #25d366;
+            background-color: #8e24aa; /* Purple */
+            border-color: #8e24aa;
         }
         
         .cta-button:hover {
-            background-color: #128c7e;
-            border-color: #128c7e;
+            background-color: #6a1b9a; /* Darker purple */
+            border-color: #6a1b9a;
         }
         
         .features {
@@ -51,7 +51,7 @@
         }
         
         footer {
-            background-color: #075e54;
+            background-color: #5e2a80; /* Dark purple */
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -63,7 +63,7 @@
         
         @keyframes rainflow {
             0% { transform: translateY(-100%); color: #333; }
-            50% { transform: translateY(0); color: red; }
+            50% { transform: translateY(0); color: #8e24aa; }
             100% { transform: translateY(100%); color: #333; }
         }
 
@@ -79,7 +79,7 @@
         }
 
         .pricing-card {
-            border: 2px solid #28a745;
+            border: 2px solid #8e24aa; /* Purple */
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
@@ -90,13 +90,31 @@
         }
 
         .pricing-card h3 {
-            color: #28a745;
+            color: #8e24aa; /* Purple */
         }
 
         .pricing-card .price {
             font-size: 1.2rem;
             color: #6c757d;
             margin-bottom: 15px;
+        }
+
+        /* Custom styles for form fields and text areas */
+        .form-control {
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            padding: 0.75rem 1.25rem;
+            background-color: #fff;
+            color: #495057;
+        }
+
+        .form-control:focus {
+            border-color: #8e24aa; /* Purple */
+            box-shadow: 0 0 0 0.2rem rgba(142, 36, 170, 0.25);
+        }
+
+        textarea.form-control {
+            resize: vertical; /* Allow vertical resizing only */
         }
     </style>
 </head>
@@ -138,7 +156,7 @@
             <h1 class="mb-4">Request Free Access to Corn AI</h1>
             <p class="lead">Transform Your Customer Relationships with Advanced AI</p>
             <p>You get 4 months completely free to test and work on your business.</p>
-            <h1 class="rainflow-text">Patience is the way of enterprises</h1>
+           
             <a href="Discover-Corn-AI-The-Future-of-Customer-Relationship-Management.pdf" class="btn btn-lg btn-success cta-button">Documentation</a>
         </div>
     </section>
@@ -158,37 +176,37 @@
             <h2>Key Features</h2>
             <div class="row mt-5">
                 <div class="col-md-4 mb-4">
-                    <i class="fas fa-robot fa-4x mb-4"></i>
+                    <i class="fas fa-robot fa-4x mb-4" style="color: #8e24aa;"></i>
                     <h4>AI-Powered Interaction</h4>
                     <p>Corn AI leverages OpenAI's language models to provide natural and intelligent responses to customer inquiries, enhancing engagement and efficiency.</p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <i class="fas fa-user fa-4x mb-4"></i>
+                    <i class="fas fa-user fa-4x mb-4" style="color: #8e24aa;"></i>
                     <h4>Personalization with Gemini AI</h4>
                     <p>Integrating Gemini AI enables Corn AI to analyze customer sentiment and preferences, delivering personalized interactions tailored to individual needs.</p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <i class="fab fa-whatsapp fa-4x mb-4"></i>
+                    <i class="fab fa-whatsapp fa-4x mb-4" style="color: #8e24aa;"></i>
                     <h4>WhatsApp Web API Integration</h4>
                     <p>Utilizing the WhatsApp Web API ensures secure and reliable messaging capabilities, essential for effective customer communication.</p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <i class="fas fa-check-circle fa-4x mb-4"></i>
+                    <i class="fas fa-check-circle fa-4x mb-4" style="color: #8e24aa;"></i>
                     <h4>Enhanced Customer Engagement</h4>
                     <p>Corn AI facilitates prompt and personalized responses, improving customer satisfaction and loyalty.</p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <i class="fas fa-cogs fa-4x mb-4"></i>
+                    <i class="fas fa-cogs fa-4x mb-4" style="color: #8e24aa;"></i>
                     <h4>Efficient CRM</h4>
                     <p>Automated workflows and advanced analytics optimize resource management and operational efficiency.</p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <i class="fas fa-expand fa-4x mb-4"></i>
+                    <i class="fas fa-expand fa-4x mb-4" style="color: #8e24aa;"></i>
                     <h4>Scalability</h4>
                     <p>Designed for scalability, Corn AI accommodates business growth and adapts to evolving CRM requirements seamlessly.</p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <i class="fas fa-microphone fa-4x mb-4"></i>
+                    <i class="fas fa-microphone fa-4x mb-4" style="color: #8e24aa;"></i>
                     <h4>Voice Integration</h4>
                     <p>Corn AI is a state-of-the-art voice assistant designed to facilitate business growth by seamlessly adapting to evolving CRM requirements.</p>
                 </div>
@@ -309,7 +327,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Corn AI. All Rights Reserved. Developed by Ad Web Comic Agency</p>
+            <p>&copy; 2024 Corn AI. All Rights Reserved. Developed by ComicFix.com</p>
         </div>
     </footer>
 
