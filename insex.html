@@ -24,7 +24,41 @@
     <link rel="icon" href="" type="image/x-icon">
 
 </head>
+    <style>
+        /* Container styling for the Product Hunt badge link */
+.product-hunt-badge {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #DA552F; /* Product Hunt's primary color */
+    border-radius: 8px;
+    background-color: #FFF5F3; /* Light background to make it stand out */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Styling for the hover effect */
+.product-hunt-badge:hover {
+    background-color: #DA552F; /* Product Hunt's primary color */
+    transform: scale(1.05);
+}
+
+/* Ensure the image within the link scales properly */
+.product-hunt-badge img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+
+/* Styling for the image on hover */
+.product-hunt-badge:hover img {
+    filter: brightness(0) invert(1);
+}
+
+    </style>
 <body>
+    
 
     <!-- Home ================================================== -->
     <main class="s-home s-home--particles">
