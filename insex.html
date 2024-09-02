@@ -25,21 +25,26 @@
 
 </head>
     <style>
-        /* Container styling for the Product Hunt badge link */
+       /* Styling for the container div */
+.product-hunt-container {
+    background-color: white; /* White background */
+    padding: 20px; /* Padding to give some space around the badge */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+    text-align: center; /* Center the badge inside the div */
+    max-width: 300px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container on the page */
+}
+
+/* Container styling for the Product Hunt badge link */
 .product-hunt-badge {
     display: inline-block;
-    padding: 10px;
-    border: 2px solid #DA552F; /* Product Hunt's primary color */
-    border-radius: 8px;
-    background-color: #FFF5F3; /* Light background to make it stand out */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-align: center;
+    transition: transform 0.3s ease;
     text-decoration: none;
 }
 
 /* Styling for the hover effect */
 .product-hunt-badge:hover {
-    background-color: #DA552F; /* Product Hunt's primary color */
     transform: scale(1.05);
 }
 
@@ -204,9 +209,12 @@
         </div>
     </div>
 
-    <a href="https://www.producthunt.com/posts/corn-ai?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-corn-ai" target="_blank">
-        <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=485917&theme=light" alt="Corn AI - WhatsApp CRM Tool Using Llama | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54">
+   <div class="product-hunt-container">
+    <a href="https://www.producthunt.com/posts/corn-ai?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-corn-ai" target="_blank" class="product-hunt-badge">
+        <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=485917&theme=light" alt="Corn AI - WhatsApp CRM Tool Using Llama | Product Hunt" width="250" height="54">
     </a>
+</div>
+
 
     <!-- JavaScript ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
